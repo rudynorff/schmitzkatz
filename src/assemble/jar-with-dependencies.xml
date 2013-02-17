@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly>
+	<id>distribution</id>
+	<formats>
+		<format>jar</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+	<fileSets>
+		<fileSet>
+			<directory>target/classes</directory>
+			<outputDirectory>/</outputDirectory>
+		</fileSet>
+	</fileSets>
+	<dependencySets>
+		<dependencySet>
+			<outputDirectory>/</outputDirectory>
+			<unpack>true</unpack>
+			<scope>runtime</scope>
+			<includes>
+				<include>net.sf.json-lib:json-lib</include>
+				<include>commons-io:commons-io</include>
+				<include>commons-lang:commons-lang</include>
+				<include>commons-beanutils:commons-beanutils</include>
+				<include>commons-collections:commons-collections</include>
+				<include>commons-logging:commons-logging</include>
+				<include>net.sf.ezmorph:ezmorph</include>
+				<include>org.freemarker:freemarker</include>
+				<include>org.markdownj:markdownj</include>
+			</includes>
+		</dependencySet>
+	</dependencySets>
+</assembly>
