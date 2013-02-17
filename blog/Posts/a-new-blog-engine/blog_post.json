@@ -1,5 +1,5 @@
 {
-    "title": "A new blog-engine",
+    "title": "Schmitzkatz - A new static blog-engine",
     "date": "2013-02-17 13:19:18",
-    "summary": "Write a short summary of your article here. Note that blogpage.uses.abstract in your settings.properties needs to be set to true, first."
+    "summary": "Many blog-engines have been written. Most dynamic ones require quite some setup. On the other hand the static engines I have tested usually require for a specific version of Ruby. This is why I wrote my own blog-engine."
 }
