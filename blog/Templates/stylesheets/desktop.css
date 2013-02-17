@@ -40,7 +40,7 @@ code {
   border: 1px solid #CCCCCC;
   font-size: 13px;
   line-height: 19px;
-  overflow: auto;
+  overflow: visible;
   padding: 6px 10px;
   border-radius: 3px;
 }
