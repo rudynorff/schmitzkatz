@@ -10,7 +10,7 @@
 			<nav>
 				<ul id="navigation">
 					<li><a href="../../../../../apps.html" class="left-link">apps</a></li>
-					<li><a href="../../../../../blog.html" class="active left-link">blog</a></li>
+					<li><a href="../../../../../index.html" class="active left-link">blog</a></li>
 					<li>
 						<a href="http://mactun.es">
 							<img src="../../../../../media/logo_compact.png" alt="mactun.es Logo" />
