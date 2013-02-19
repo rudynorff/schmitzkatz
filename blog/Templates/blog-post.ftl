@@ -15,8 +15,8 @@
               user-scalable=0,
               target-densitydpi=device-dpi" />
 
-		<link rel="stylesheet" media="screen" href="stylesheets/desktop.css" />
-		<link rel="stylesheet" href="stylesheets/mobile.css" media="screen and (min-device-width : 320px) and (max-device-width : 479px)"  />
+		<link rel="stylesheet" media="screen" href="../../../../../stylesheets/desktop.css" />
+		<link rel="stylesheet" href="../../../../../stylesheets/mobile.css" media="screen and (min-device-width : 320px) and (max-device-width : 479px)" />
 	</head>
 	<body>
 		<div id="container">
@@ -39,7 +39,7 @@
 			<section>
 				<article>
 					<header>
-						<h1><a href="#">${post.title}</a></h1>
+						<h1>${post.title}</h1>
 						<span>${post.date?string("yyyy-MM-dd")}</span>
 					</header>
 					<section id="summary-text">
