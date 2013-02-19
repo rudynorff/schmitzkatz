@@ -26,9 +26,11 @@ public class BlogGenerator {
 
 	private static final String KEY_POSTS = "blogposts";
 	private static final String KEY_POST = "post";
-	private static final String KEY_MAIN_BLOG_PAGE_TEMPLATE = "blog.ftl"; // TODO get from props
+	private static final String KEY_MAIN_BLOG_PAGE_TEMPLATE = "index.ftl"; // TODO get from props
 	private static final String KEY_BLOG_POST_TEMPLATE = "blog-post.ftl"; // TODO get from props
-	private static final String BLOG_MAIN_HTML_FILENAME = "blog.html"; // TODO get from props
+	private static final String BLOG_MAIN_HTML_FILENAME = "index.html"; // TODO get from props
+	private static final String DS_STORE = ".DS_Store";
+	
 
 	private BlogProperties properties;
 	private Configuration configuration;
@@ -152,7 +154,7 @@ public class BlogGenerator {
 	private void copyMediaDirToGeneratedPost(BlogPost post) {
 		try {
 			FileUtils.copyDirectoryToDirectory(new File(post.getPostMediaDir()), 
-												new File(post.getPostMediaDirInGeneratedDir()));
+												new File(post.getPostDirInGeneratedDir()));
 		} catch (IOException ioe) {
 			System.out.println("Error: Could not copy media dir for post " + post.getIdentifier());
 		}
@@ -165,7 +167,7 @@ public class BlogGenerator {
 		return postsDir.list(new FilenameFilter() {
 			@Override
 			public boolean accept(File dir, String name) {
-				return dir.isDirectory();
+				return dir.isDirectory() && !DS_STORE.equals(name);
 			}
 		});
 	}
