@@ -45,6 +45,10 @@ code {
   border-radius: 3px;
 }
 
+a, img {
+  border: none;
+}
+
 #container {
 	width: 640px;
 	margin: 0 auto 70px auto;
