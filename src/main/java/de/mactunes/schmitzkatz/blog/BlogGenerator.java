@@ -151,7 +151,7 @@ public class BlogGenerator {
 
 	private void copyMediaDirToGeneratedPost(BlogPost post) {
 		try {
-			FileUtils.copyDirectoryToDirectory(new File(post.getPostMediaDir()), 
+			FileUtils.copyDirectoryToDirectory(new File(post.getPostDir()), 
 												new File(post.getPostMediaDirInGeneratedDir()));
 		} catch (IOException ioe) {
 			System.out.println("Error: Could not copy media dir for post " + post.getIdentifier());
