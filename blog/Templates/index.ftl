@@ -2,6 +2,7 @@
 <html lang="en-us">
 	<head>
 		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<title>mactun.es</title>
 		<link rel="stylesheet" media="screen" href="stylesheets/desktop.css">
 	</head>
