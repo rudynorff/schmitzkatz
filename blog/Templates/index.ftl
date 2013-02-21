@@ -25,14 +25,14 @@
 			<nav>
 				<ul id="navigation">
 					<li><a href="apps.html" class="left-link">apps</a></li>
-					<li><a href="index.html" class="left-link">blog</a></li>
+					<li><a href="index.html" class="left-link active">blog</a></li>
 					<li>
 						<a href="http://mactun.es">
 							<img src="media/logo_compact.png" alt="mactun.es Logo" />
 						</a>
 					</li>
 					<li><a href="contact.html" class="right-link">contact</a></li>
-					<li><a href="about.html" class="active right-link">about</a></li>
+					<li><a href="about.html" class="right-link">about</a></li>
 				</ul>
 			</nav>
 
