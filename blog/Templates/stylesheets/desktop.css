@@ -1,19 +1,20 @@
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.7em;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.9em;
 }
 
 h1 {
-  font-size: 17px;
+  font-size: 22px;
 }
 
 h2 {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 h3 {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 blockquote {
@@ -49,6 +50,10 @@ a, img {
   border: none;
 }
 
+img {
+  width: 640px;
+}
+
 #container {
 	width: 640px;
 	margin: 0 auto 70px auto;
@@ -59,6 +64,10 @@ a, img {
   padding: 0;
 	text-align: center;
   list-style-type: none;
+}
+
+#navigation img {
+  width: 46px;
 }
 
 #navigation li {
@@ -101,8 +110,9 @@ article header span {
 }
 
 #post-text {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
   text-align: justify;
   margin-bottom: 20px;
 }
@@ -112,8 +122,9 @@ article header span {
 }
 
 #summary-text {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
   font-style: italic;
   color: #A0A0A0;
   text-align: justify;
