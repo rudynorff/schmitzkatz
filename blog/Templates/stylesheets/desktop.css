@@ -6,15 +6,15 @@ body {
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 blockquote {
@@ -93,7 +93,6 @@ article header {
 article header h1 {
   margin: 22px 0 22px 0;
   display: inline-block;
-  font-size: 22px;
   line-height: 1em;
 }
 
@@ -105,14 +104,14 @@ article header span {
   margin: 26px 0 26px 0;
   float: right;
   color: #D4D4D4;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1em;
 }
 
 #post-text {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
   font-weight: 300;
-  font-size: 17px;
+  font-size: 20px;
   text-align: justify;
   margin-bottom: 20px;
 }
@@ -124,7 +123,7 @@ article header span {
 #summary-text {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
   font-weight: 300;
-  font-size: 17px;
+  font-size: 20px;
   font-style: italic;
   color: #A0A0A0;
   text-align: justify;
