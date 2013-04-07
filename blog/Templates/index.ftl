@@ -15,7 +15,7 @@
               user-scalable=0,
               target-densitydpi=device-dpi" />
 
-		<link rel="stylesheet" media="screen" href="stylesheets/desktop.css" />
+		<link rel="stylesheet" media="screen and (min-width : 768px)" href="stylesheets/desktop.css" />
 		<link rel="stylesheet" href="stylesheets/mobile.css" media="screen and (max-device-width : 767px)" />
 
 		<!-- TODO include apple touch icon  -->
