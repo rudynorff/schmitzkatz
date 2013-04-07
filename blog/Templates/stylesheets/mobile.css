@@ -3,6 +3,8 @@ html, body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
   font-weight: 300;
   font-size: 20px;
+  text-align: justify;
+  margin: 10px;
 }
 
 h1 {
