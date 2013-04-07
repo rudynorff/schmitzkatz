@@ -42,3 +42,5 @@ On my wishlist:
 * Pagination
 * Archiving of blog entries
 * Fixing the existing bugs
+
+**Update (2013-04-08)**: Fixed a lot of mobile CSS for this site.

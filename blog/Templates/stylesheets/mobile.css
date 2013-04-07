@@ -44,14 +44,17 @@ hr {
   border: none !important;
 }
 
-code {
+pre {
+  overflow-x: scroll;
   background-color: #F8F8F8;
   border: 1px solid #CCCCCC;
-  font-size: 13px;
-  line-height: 19px;
-  overflow: auto;
   padding: 6px 10px;
   border-radius: 3px;
+}
+
+code {
+  font-size: 13px;
+  line-height: 19px;
 }
 
 a, img {
