@@ -51,7 +51,7 @@ a, img {
 }
 
 img {
-  width: 640px;
+  max-width: 640px;
 }
 
 #container {

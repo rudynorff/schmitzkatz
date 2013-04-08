@@ -13,10 +13,21 @@
               minimum-scale=1.0, 
               maximum-scale=1.0, 
               user-scalable=0,
-              target-densitydpi=device-dpi" />
+              target-densitydpi=medium-dpi" />
 
+
+        <!--[if IE]>
+			<link rel="stylesheet" href="../../../../../stylesheets/desktop.css" />	
+        <![endif]-->
 		<link rel="stylesheet" media="screen and (min-width : 768px)" href="../../../../../stylesheets/desktop.css" />
 		<link rel="stylesheet" href="../../../../../stylesheets/mobile.css" media="screen and (max-device-width : 767px)" />
+
+		<link rel="icon" href="../../../../../media/favicon.ico" type="image/x-icon">
+
+		<link rel="apple-touch-icon" href="../../../../../media/touch-icon-iphone.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="../../../../../media/touch-icon-ipad.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="../../../../../media/touch-icon-iphone-retina.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="../../../../../media/touch-icon-ipad-retina.png" />
 	</head>
 	<body>
 		<div id="container">
