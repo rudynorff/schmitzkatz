@@ -68,6 +68,11 @@ img {
 
 #navigation img {
   width: 46px;
+  opacity: 0;
+
+  -webkit-animation: logo-animator 5s;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
 }
 
 #navigation li {
@@ -138,4 +143,24 @@ article header span {
 .right-link {
 	float: right;
 	margin-left: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes logo-animator {
+  from {
+    opacity: 0.0;
+  }
+  to {
+    opacity: 1.0;
+  }
 }
