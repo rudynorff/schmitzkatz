@@ -130,7 +130,7 @@ public class BlogPost implements Comparable<BlogPost> {
 
 		return File.separator + POSTS_DIR +
 					File.separator + cal.get(Calendar.YEAR) + 
-					File.separator + cal.get(Calendar.MONTH) +
+					File.separator + (cal.get(Calendar.MONTH) + 1) +
 					File.separator + cal.get(Calendar.DAY_OF_MONTH) ;
 	}
 
@@ -146,7 +146,7 @@ public class BlogPost implements Comparable<BlogPost> {
 
 		return POSTS_DIR + SLASH + 
 					cal.get(Calendar.YEAR) + SLASH +
-					cal.get(Calendar.MONTH) + SLASH +
+					(cal.get(Calendar.MONTH) + 1) + SLASH +
 					cal.get(Calendar.DAY_OF_MONTH) + SLASH +
 					getIdentifier() + SLASH + 
 					BLOG_POST_HTML_FILENAME;
