@@ -1,0 +1,5 @@
+{
+    "title": "Raspberry Pi issue with FTDI hardware",
+    "date": "2013-04-30 00:18:18",
+    "summary": "The Raspberry Pi is an awesome piece of hardware for little money. Connecting a RS-232 to USB adapter the Pi often leads to the system freezing, though. Here is a simple way to fix it."
+}
