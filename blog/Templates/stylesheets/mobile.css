@@ -118,17 +118,17 @@ article header span {
   text-align: right;
 }
 
-#post-text {
+.post-text {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
   font-size: 22px;
   margin-bottom: 20px;
 }
 
-#post-text a {
+.post-text a {
   text-decoration: underline;
 }
 
-#summary-text {
+.summary-text {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
   font-size: 22px;
   font-style: italic;

@@ -4,7 +4,9 @@
 		<title>mactun.es</title>
 
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<!--[if IE]>
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<![endif]-->
 
         <meta name="HandheldFriendly" content="true" />
         <meta name="viewport" content="
@@ -55,10 +57,10 @@
 					</header>
 					<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="${post.title}">Tweet</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-					<section id="summary-text">
+					<section class="summary-text">
 						${post.summary}
 					</section>
-					<section id="post-text">
+					<section class="post-text">
 						${post.textAsHTML}
 					</section>
 				</article>

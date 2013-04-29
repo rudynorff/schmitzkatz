@@ -4,7 +4,9 @@
 		<title>mactun.es</title>
 
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<!--[if IE]>
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<![endif]-->
 
         <meta name="HandheldFriendly" content="true" />
         <meta name="viewport" content="
@@ -53,7 +55,7 @@
 							<h1><a href="${post.link}">${post.title}</a></h1>
 							<span>${post.date?string("yyyy-MM-dd")}</span>
 						</header>
-						<section id="post-text">
+						<section class="post-text">
 							${post.summary}
 							<p>
 								<a href="${post.link}">Read on...</a>
