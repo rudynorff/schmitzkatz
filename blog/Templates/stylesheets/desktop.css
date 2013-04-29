@@ -125,7 +125,7 @@ article header span {
   text-decoration: underline;
 }
 
-#summary-text {
+.summary-text {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
   font-weight: 300;
   font-size: 20px;
