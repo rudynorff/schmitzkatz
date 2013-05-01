@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<title>mactun.es</title>
+
+		<meta charset="utf-8">
+		<!--[if IE]>
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<![endif]-->
+
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="viewport" content="
+              width=device-width, 
+              initial-scale=1.0, 
+              minimum-scale=1.0, 
+              maximum-scale=1.0, 
+              user-scalable=0,
+              target-densitydpi=medium-dpi" />
+
+
+        <!--[if IE]>
+			<link rel="stylesheet" href="../../../../../stylesheets/desktop.css" />	
+        <![endif]-->
+		<link rel="stylesheet" media="screen and (min-width : 768px)" href="../../../../../stylesheets/desktop.css" />
+		<link rel="stylesheet" href="../../../../../stylesheets/mobile.css" media="screen and (max-width : 767px)" />
+
+		<link rel="icon" href="../../../../../media/favicon.ico" type="image/x-icon">
+
+		<link rel="apple-touch-icon" href="../../../../../media/touch-icon-iphone.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="../../../../../media/touch-icon-ipad.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="../../../../../media/touch-icon-iphone-retina.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="../../../../../media/touch-icon-ipad-retina.png" />
+	</head>
+	<body>
+		<div id="container">
+			<nav>
+				<ul id="navigation">
+					<li><a href="../../../../../apps.html" class="left-link">apps</a></li>
+					<li><a href="../../../../../index.html" class="active left-link">blog</a></li>
+					<li>
+						<a href="http://mactun.es">
+							<img src="../../../../../media/logo_compact.png" alt="mactun.es Logo" />
+						</a>
+					</li>
+					<li><a href="../../../../../contact.html" class="right-link">contact</a></li>
+					<li><a href="../../../../../about.html" class="right-link">about</a></li>
+				</ul>
+			</nav>
+
+			<hr />
+
+			<section>
+				<article>
+					<header>
+						<h1>Raspberry Pi issue with FTDI hardware</h1>
+						<span>2013-04-30</span>
+					</header>
+					<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="Raspberry Pi issue with FTDI hardware">Tweet</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					<section class="summary-text">
+						The Raspberry Pi is an awesome piece of hardware for little money. Connecting a RS-232 to USB adapter the Pi often leads to the system freezing, though. Here is a simple way to fix it.
+					</section>
+					<section class="post-text">
+						<p>Disclaimer: I didn't come up with a fix to this issue. I rather wrote it down so that it can be found by others more easily.</p>
+
+<p>Lately, I have been hacking around with a Raspberry Pi writing a small Java app which uses the RXTX library to read from a RS-232/USB adapter and sending the input via the Pi's ethernet port to a server for further processing. This worked reasonably well till one day I could not reach the Pi via SSH anymore. At first I thought of a random lockup, but after some days the issue kept repeating itself.</p>
+
+<p>After looking through the logs something interesting caught my attention: /var/logs/messages showed hundreds of write errors via en0 (the ethernet interface). Below is a small excerpt from the log:</p>
+
+<pre><code>Apr 29 19:59:57 raspberrypi kernel: [79225.020169] smsc95xx 1-1.1:1.0: eth0: Failed to write HW_CFG_LRST_ bit in HW_CFG register, ret = -110
+Apr 29 20:00:03 raspberrypi kernel: [79231.020288] smsc95xx 1-1.1:1.0: eth0: Failed to write register index 0x00000014
+Apr 29 20:00:03 raspberrypi kernel: [79231.020319] smsc95xx 1-1.1:1.0: eth0: Failed to write HW_CFG_LRST_ bit in HW_CFG register, ret = -110
+Apr 29 20:00:09 raspberrypi kernel: [79237.020457] smsc95xx 1-1.1:1.0: eth0: Failed to write register index 0x00000014
+Apr 29 20:00:09 raspberrypi kernel: [79237.020488] smsc95xx 1-1.1:1.0: eth0: Failed to write HW_CFG_LRST_ bit in HW_CFG register, ret = -110
+Apr 29 20:00:15 raspberrypi kernel: [79243.020614] smsc95xx 1-1.1:1.0: eth0: Failed to write register index 0x00000014
+Apr 29 20:00:15 raspberrypi kernel: [79243.020646] smsc95xx 1-1.1:1.0: eth0: Failed to write HW_CFG_LRST_ bit in HW_CFG register, ret = -110
+Apr 29 20:00:21 raspberrypi kernel: [79249.020764] smsc95xx 1-1.1:1.0: eth0: Failed to write register index 0x00000014
+Apr 29 20:00:21 raspberrypi kernel: [79249.020795] smsc95xx 1-1.1:1.0: eth0: Failed to write HW_CFG_LRST_ bit in HW_CFG register, ret = -110
+</code></pre>
+
+<p>After some websearches I found a lot of posts by others linked to the same issue and learned that the chipset on the Pi serves the USB port and the ethernet port and was probably disturbed by the FTDI driver (a driver for the chipset used powering lot of the RS-232/USB adapters out there).</p>
+
+<p>After some time I found the solution to my troubles provided by some brilliant folks out there. The solution is to update the device's firmware/kernel to a more recent version where the bug has been resolved. This can be done easily via the tool <a href="https://github.com/Hexxeh/rpi-update">rpi-update</a>. To install and run it all you have to do is install git, get the script and run it:</p>
+
+<pre><code>sudo apt-get install git-core
+sudo wget http://goo.gl/1BOfJ -O /usr/bin/rpi-update &amp;&amp; sudo chmod +x /usr/bin/rpi-update
+sudo rpi-update
+</code></pre>
+
+<p>After these steps reboot the Raspberry. That should be all! Your system shouldn't lock up anymore. Hope this helps you as much as it helped me!</p>
+
+					</section>
+				</article>
+			</section>
+		</div>
+	</body>
+</html>
