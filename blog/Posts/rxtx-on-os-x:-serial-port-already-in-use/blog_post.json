@@ -1,0 +1,5 @@
+{
+    "title": "RXTX on OS X: Serial port already in use",
+    "date": "2013-05-02 22:41:02",
+    "summary": "After starting my Java app I got a message that the serial port I was trying to connect to was already in use. The problem turned out to be a completely different thing."
+}
