@@ -26,9 +26,9 @@ public class BlogGenerator {
 
 	private static final String KEY_POSTS = "blogposts";
 	private static final String KEY_POST = "post";
-	private static final String KEY_MAIN_BLOG_PAGE_TEMPLATE = "index.ftl"; // TODO get from props
+	private static final String KEY_MAIN_BLOG_PAGE_TEMPLATE = "blog-main.ftl"; // TODO get from props
 	private static final String KEY_BLOG_POST_TEMPLATE = "blog-post.ftl"; // TODO get from props
-	private static final String BLOG_MAIN_HTML_FILENAME = "index.html"; // TODO get from props
+	private static final String BLOG_MAIN_HTML_FILENAME = "blog-main.html"; // TODO get from props
 	private static final String DS_STORE = ".DS_Store";
 	
 

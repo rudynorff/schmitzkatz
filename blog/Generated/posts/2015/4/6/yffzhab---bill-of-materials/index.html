@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>norff.net - A page from and about Rudy Norff</title>
+    <link rel="stylesheet" href="../../../../../stylesheets/app.css">
+	
+	<script src="../../../../../scripts/app.js"></script>
+</head>
+
+<body>
+
+    <ul id="main-nav" data-dropdown-menu>
+        <!--<li><a href="#">software</a></li>-->
+        <li><a href="../../../../../projects.html">projects</a></li>
+        <li><a href="../../../../../about.html">me</a></li>
+        <li><a href="../../../../../blog-main.html">blog</a></li>
+        <li><a href="../../../../../contact.html">contact</a></li>
+        <li class="icon">
+            <a href="javascript:void(0);" onclick="toggleMenu()">&#9776;</a>
+        </li>
+    </ul>
+
+    <section id="main-section">
+        
+      <article>
+        <header>
+          <h1>YFFZHAB - Bill of materials</h1>
+          <span>2015-04-06</span>
+        </header>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="YFFZHAB - Bill of materials">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <section class="summary-text">
+          Launching a high altitude balloon is not cheap and can't be done for 100 dollars (as some people claim) unless you already own most material before building the payload. This short article shows all the materials needed to build and launch a HAB.
+        </section>
+        <section class="post-text">
+		  <p>As you can see below the BOM (bill of materials) is divided into multiple lists so e.g. if you already have a parachute you can just skip that section. Also note that this BOM is for a special kind of balloon where the total mass of balloon, parachute, strings and payload must weigh less than 500 grams. In the United States of America it seems that you can launch a lot heavier items more easily. If you live there this BOM might not be for you. If you live in Europe (or more precisely Germany), the BOM might be of interest!</p>
+
+<h3>Tools and materials</h3>
+
+<p>We custom built our own payload boxes that carry a GPS tracker, the Raspberry Pi camera, etc. a while back. With the items below you can build several of these boxes so you only need to buy these items once.</p>
+
+<ul>
+<li>Styrofoam (10 cm): 10 Euros</li>
+<li>Styrofoam (2 cm): 5 Euros</li>
+<li>Blow torch incl. 4 gas catridges: 20 Euros</li>
+<li>Hot glue gun: 10 Euros</li>
+<li>Duct tape: 5 Euros</li>
+<li>Carpet knife: 3 Euros</li>
+<li>Strong wire to heat and melt the styrofoam: 3 Euros</li>
+<li>Long, sharp knife (you won't be able to use it for anything else later on): 10 euros</li>
+</ul>
+
+<p><img src="media/payload_box.jpg" alt="Finished payload box sans GPS tracker and battery" title="Finished payload box sans GPS tracker and battery" />
+<em>The picture above shows the finished payload box sans GPS tracker and battery. It was cut from 10cm styrofoam. The holes were melted using a blow torch and a wire.</em></p>
+
+<p>Of course, you can also just take an off-the-shelf styrofoam box! For us however it turned out lighter than anything we could find, more resiliant against the cold and the Raspberry Pi slides just in so you don't need to attach it. </p>
+
+<p>Total cost of tools and materials needed: <strong>approx. 66 Euros</strong></p>
+
+<h3>Payload</h3>
+
+<p>This list consists of (almost) all items put into the payload box. I highly recommend buying all of the items on this list twice! If something doesn't work as expected or simply doesn't turn on just switch it!</p>
+
+<ul>
+<li>Prepaid SIM card: 10 Euros</li>
+<li>GPS tracker: 35 Euros</li>
+<li>Raspberry Pi Model A+: 23 Euros</li>
+<li>Raspberry Pi Camera: 23: Euros</li>
+<li>Pololu 5V DC-DC Step-up/-down converter (i.e. model S7V7F5): 5 Euros</li>
+<li>2x Additional Raspberry Pi camera cables (they break easily): 3 Euros</li>
+<li>9V block battery clip (connects battery to converter to Pi): 3 Euros</li>
+</ul>
+
+<p>This totals to 107 Euros. However, we really really recommend buying these materials at least twice so that you have back-up in case anythin doesn't work on launch day. Total with back-up <strong>approx. 214 Euros</strong></p>
+
+<h3>Parachute and Strings</h3>
+
+<p>In our case building our own parachute and finding the perfect strings to use was essential to save weight (we needed to stay below 500 grams to avoid more strict government regulations).</p>
+
+<ul>
+<li>1m x 1.5m Rip-stop nylon (27g per square meter): 15 Euros</li>
+<li>4mm eyelets (keeps strings from cutting into nylon): 7 Euros</li>
+<li>300 meters of 0.58mm dyneema fishing line (100 lbs): 10 Euros</li>
+</ul>
+
+<p>This totals to <strong>32 Euros</strong></p>
+
+<h3>Operating materials</h3>
+
+<p>This is the stuff you need to operate the Raspberry that records videos and the balloon that needs to rise. You will need at least 3 batteries to test and have backup (we recommend more).</p>
+
+<ul>
+<li>2 cubic meters of helium (enough for 2 balloon starts or 1 really sloppy one): 100 Euros</li>
+<li>3x Energizer Ultimate Lithium 9V block batteries (IMHO Energizers are the best batteries we have seen for this job): 25 Euros</li>
+<li>2x 16 GB SD cards (we put together some <a href="https://bitbucket.org/rnorff/yffzhab">scripts</a> for recording continuously): 20 Euros</li>
+</ul>
+
+<p>Total cost: <strong>145 Euros</strong></p>
+
+<h3>Test equipment</h3>
+
+<p>You will need to test everything <em>A LOT</em>. The model B+ Raspberry Pi allows you to set up the SD cards that the model A+ will boot from and record it's videos to.</p>
+
+<ul>
+<li>Raspberry Pi Model B+ (allows reading the videos from the A+): approx. 32 Euros</li>
+<li>Cat 5 network cable: 3 Euros</li>
+</ul>
+
+<p>This totals to <strong>35 Euros</strong></p>
+
+<h3>Grand total</h3>
+
+<p>If you don't have any of the materials above at home the grand total will bring you to: <strong>492 Euros</strong>. Additionally, getting a balloon to fly and recover it later on takes weeks/months and iterations of planning, building, testing and improving. </p>
+
+<p>If you were looking for a quick/cheap hobby this might not be the one for you. The total above also resembles the bare minimum that we have found. The less accurate you work the more expensive it gets. We are quite sure that some people can stay below the 500 Euros as well, but for most people this is what to expect.</p>
+
+        </section>
+      </article>
+	  
+    </section>
+  </body>
+</html>

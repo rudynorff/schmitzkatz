@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  background-color: #091B36;
+  color: #FFFFFF;
+}
+
+a {
+  color: #FFFFFF;
+}
+
+a:visited {
+  color: #3C78B4;
+}
+
+#splash { 
+	background: url("../media/nav_bg1.jpg") no-repeat center fixed;
+	background-size: cover;
+}
+
+@media screen and (min-width:1980px) {
+    #splash {
+        background: -webkit-filter(url(../media/nav_bg1.jpg), blur(3px)) no-repeat center fixed;
+    }
+}
+
+.right-align {
+  float: right;
+}
+
+.left-align {
+  float: left;
+}
+
+#main-section {
+  margin: 2em;
+  font-size: 1.3em;
+}
+
+#main-section article {
+  margin-top: 3em;
+  margin-bottom: 1.5em;
+}
+
+.footnoted-image {
+  max-width: 25%;
+}
+
+.left-margin {
+  margin-left: 1em;
+}
+
+.right-margin {
+  margin-right: 1em;
+}
+
+.top-margin {
+  margin-top: 1em;
+}
+
+.bottom-margin {
+  margin-bottom: 1em;
+}
+
+.footnoted-image div {
+  font-size: 0.55em;
+  padding-top: 0.4em;
+}
+
+.footnoted-image img {
+  max-width: 100%;
+}
+
+img {
+  max-width: 75%;
+}
+
+
+
+
+/**************** MAIN NAVIGATION MENU *****************/
+/* Remove margins and padding from the list, and add a black background color */
+
+#main-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00FF80;
+}
+
+/* Float the list items side by side */
+#main-nav li {float: left;}
+
+/* Style the links inside the list items */
+#main-nav li a {
+    display: inline-block;
+    
+    text-align: center;
+    padding: 1.1em 1.1em;
+    text-decoration: none;
+    transition: 0.3s;
+    
+    color: #091B36;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+/* Change background color of links on hover */
+#main-nav li a:hover { background-color: #00CC40; }
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+#main-nav li.icon {display: none;}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  #main-nav li {
+    display: none;
+  }
+    
+  #main-nav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  #main-nav.responsive {
+    position: relative;
+  }
+  
+  #main-nav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  #main-nav.responsive li {
+    display: inline;
+    float: none;
+  }
+  
+  #main-nav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}

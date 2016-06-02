@@ -1,73 +1,66 @@
 <!doctype html>
-<html lang="en-us">
-	<head>
-		<title>mactun.es</title>
+<html lang="en" dir="ltr">
 
-		<meta charset="utf-8">
-		<!--[if IE]>
-			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>norff.net - A page from and about Rudy Norff</title>
+    <link rel="stylesheet" href="stylesheets/app.css">
+    
+    <script src="scripts/app.js"></script>
+</head>
 
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport" content="
-              width=device-width, 
-              initial-scale=1.0, 
-              minimum-scale=1.0, 
-              maximum-scale=1.0, 
-              user-scalable=0,
-              target-densitydpi=medium-dpi" />
+<body>
 
-        <!--[if IE]>
-			<link rel="stylesheet" href="stylesheets/desktop.css" />	
-        <![endif]-->
-		<link rel="stylesheet" media="screen and (min-width : 768px)" href="stylesheets/desktop.css" />
-		<link rel="stylesheet" href="stylesheets/mobile.css" media="screen and (max-width : 767px)" />
+    <ul id="main-nav" data-dropdown-menu>
+        <!--<li><a href="#">software</a></li>-->
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="about.html">me</a></li>
+        <li><a href="blog-main.html">blog</a></li>
+        <li><a href="contact.html">contact</a></li>
+        <li class="icon">
+            <a href="javascript:void(0);" onclick="toggleMenu()">&#9776;</a>
+        </li>
+    </ul>
 
-		<link rel="icon" href="media/favicon.ico" type="image/x-icon">
+    <section id="main-section">
+        
+        <h1>About me</h1>
+        <div class="footnoted-image left-align right-margin bottom-margin">
+            <img src="media/rudy.jpg">
+            <div>Rudy preparing the payload of a high altitude balloon in 2016 (credit: Robert Poorten).</div>
+        </div>
+        
+        <section>
+            <p>
+                My name is Rudy and I was born and currently live in Dormagen, Germany. When I was 13 my family and I moved to Timmins, Ontario 
+                in Canada which I am happy about. It's definitely one of the most beautiful countries in the world! After a 2 year stay we returned to Germany.
+            </p>
+            
+            <p>
+                In Canada I got my first Computer which was a Macintosh Performa 5200 CD. This machine got me hooked and I spent 
+                days and nights in front of it. It got me into what I do for a living today: software engineering.
+            </p>
+            
+            <p>
+                After studying software engineering for 4 years until 2007 I got particularly interested in mobile devices. 
+                I started off with developing for the J2ME platform. When Apple released the iPhone it changed everything.
+            </p>
+            
+            <p>
+                Today I develop for the most important desktop and mobile operating systems including Mac OS, 
+                Windows UWP, iOS, Android and Apple TV.
+            </p>
+            
+            <p>
+                More recently I am starting to enjoy the maker scene and the internet of things topic more and more. 
+                Together with a group of kids I've launched 6 high altitude balloons which started my interest in electronics. 
+                I am currently in the process of designing my own circuit for a LoRa-based IS-gateway. 
+            </p> 
+        </section>
+    </section>
 
-		<link rel="apple-touch-icon-precomposed" href="media/touch-icon-iphone.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="media/touch-icon-ipad.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="media/touch-icon-iphone-retina.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="media/touch-icon-ipad-retina.png" />
-	</head>
-	<body>
-		<div id="container">
-			<nav>
-				<ul id="navigation">
-					<li><a href="apps.html" class="left-link">apps</a></li>
-					<li><a href="index.html" class="left-link">blog</a></li>
-					<li>
-						<a href="http://mactun.es">
-							<img src="media/logo_compact.png" alt="mactun.es Logo" />
-						</a>
-					</li>
-					<li><a href="contact.html" class="right-link">contact</a></li>
-					<li><a href="about.html" class="active right-link">about</a></li>
-				</ul>
-			</nav>
+</body>
 
-			<hr />
-
-			<section>
-				<article>
-					<header>
-						<h1>Hi there!</h1>
-					</header>
-					<p>
-						I'm Rudy Norff and I write smartphone apps and other little goodies for a large telecommunications company in Düsseldorf, Germany.
-					</p>
-					<p>
-						I am intersted in all things science and especially in the latest space endeavours, love hacking on small embedded things and am working on an OpenGL ES 2.0 game when time allows for it.
-					</p>
-					<p>
-						Besides all of this I am a volunteer firefighter.
-					</p>
-					<p>
-						<a href="https://twitter.com/mactunes" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @mactunes</a>
-						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-					</p>
-				</article>
-			</section>
-		</div>
-	</body>
 </html>
